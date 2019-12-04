@@ -2,18 +2,18 @@
 
 if [ -f ~/.shedit_temp  ]; then
 	echo -e '#!/bin/bash\n\n' > ~/.shedit_temp
-	nano ~/.shedit_temp
+	nano +3 ~/.shedit_temp
 	~/.shedit_temp
 
 elif [[ $1 -eq '-r' ]]; then
 	
-	nano ~/.shedit_temp
+	nano +3 ~/.shedit_temp
 	~/.shedit_temp
 
 else
 	echo -e '#!/bin/bash\n\n' > ~/.shedit_temp
 	chmod +x ~/.shedit_temp
-	nano ~/.shedit_temp
+	nano +3 ~/.shedit_temp
 	~/.shedit_temp
 
 fi
